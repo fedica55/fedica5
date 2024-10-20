@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+
+</head>
+
+<body>
+ 
+
+<div class="topbar">
+    <div class="wrapper target">
+         <div class="left">
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-square-youtube"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+         </div>
+         <div class="center">
+              <a href="/">ANA SAYFA</a>
+              <a href="./hakkimda.html">HAKKIMDA</a>
+              <a href="./projeler.html">PROJELER</a>
+              <a href="./anket.html">ANKET</a>
+              <a href="./iletisim.html">İLETİŞİM</a>
+         </div>
+          <div class="right">
+              <span>
+                   <img src="../public/img/fediçaprofil.jpg" alt="user">
+              </span>   
+              <div class="searchEngine" id="searchEngine">
+                  <input type="text" placeholder="...">
+                  <i class="fa-solid fa-magnifying-glass" id="searchIcon"></i>
+             </div>
+          </div>
+    </div>
+</div>
+
+   <header class="header target">
+        <h1> ANKET</h1>
+   </header>
+
+       <div class="anket">
+       </div>
+
+        <script src="../public/js/search.js"></script>
+        <script src="../public/js/scroll.js"></script>
+
+
+        
+            <div class="container">
+                <h1>Anket</h1>
+                <div id="survey">
+                    <form id="surveyForm">
+                        <div class="question">
+                            <label>1. Eğitim düzeyiniz nedir?</label><br>
+                            <input type="radio" name="education" value="İlkokul" required> İlkokul<br>
+                            <input type="radio" name="education" value="Ortaokul"> Ortaokul<br>
+                            <input type="radio" name="education" value="Lise"> Lise<br>
+                            <input type="radio" name="education" value="Üniversite"> Üniversite<br>
+                        </div>
+                        
+                        <div class="question">
+                            <label>2. Yaş aralığınız nedir?</label><br>
+                            <input type="radio" name="age" value="18-24" required> 18-24<br>
+                            <input type="radio" name="age" value="25-34"> 25-34<br>
+                            <input type="radio" name="age" value="35-44"> 35-44<br>
+                            <input type="radio" name="age" value="45 ve üzeri"> 45 ve üzeri<br>
+                        </div>
+        
+                        <div class="question">
+                            <label>3. Hangi sıklıkla kitap okursunuz?</label><br>
+                            <input type="radio" name="reading" value="Her gün" required> Her gün<br>
+                            <input type="radio" name="reading" value="Haftada birkaç kez"> Haftada birkaç kez<br>
+                            <input type="radio" name="reading" value="Ayda bir"> Ayda bir<br>
+                            <input type="radio" name="reading" value="Nadir"> Nadir<br>
+                        </div>
+        
+                        <div class="question">
+                            <label>4. En sevdiğiniz film türü nedir?</label><br>
+                            <input type="radio" name="genre" value="Aksiyon" required> Aksiyon<br>
+                            <input type="radio" name="genre" value="Dram"> Dram<br>
+                            <input type="radio" name="genre" value="Komedi"> Komedi<br>
+                            <input type="radio" name="genre" value="Korku"> Korku<br>
+                        </div>
+        
+                        <button type="submit">Anketi Gönder</button>
+                    </form>
+                </div>
+                
+                <div id="result" style="display: none;"></div>
+            </div>
+            <script src="script.js"></script>
+        </body>
+        </html>
+        
+        
+        

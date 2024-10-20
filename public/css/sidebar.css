@@ -1,0 +1,5 @@
+.sidebar{
+    flex: 3;
+    height: 30px;
+    background-color: rgb(196, 137, 251);
+}
